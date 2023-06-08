@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-python-basic-kohs
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pkumari_org/build-e2e-qxjh-tenant/test-app-rgfs/devfile-sample-python-basic-kohs@sha256:7c85a7fd2bf4592d2dc8f30bd3b48a4632e654b70340d27112cf5f6ee31f0748
+        name: my-python
+        resources: {}
+status: {}
